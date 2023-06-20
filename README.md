@@ -2,15 +2,28 @@
 # <p align="center">BRAIN TUMOR CLASSIFICATION
 
 ## *Introduction* :
+The project on brain tumor classification utilizing Convolutional Neural Networks (CNN) aims to develop a sophisticated system for accurate and automated classification of brain tumors. CNNs are deep learning models well-suited for image analysis tasks. By training a CNN on a large dataset of brain tumor images, the system can learn to identify complex patterns and features indicative of different tumor types. The CNN architecture allows for hierarchical feature extraction, enabling the system to capture intricate details within the images. The project's goal is to leverage the power of CNNs to create a reliable and efficient tool that can aid medical professionals in diagnosing brain tumors with improved accuracy and efficiency.
   
 ## _Purpose of the Project_ :
+The purpose of the project on brain tumor classification using Convolutional Neural Networks (CNN) is to develop an advanced and automated system that can accurately classify brain tumors based on medical imaging data. By leveraging the power of CNNs, the project aims to enhance the accuracy and efficiency of brain tumor diagnosis, enabling medical professionals to make informed decisions regarding treatment planning and patient management. The system's ability to extract intricate features and patterns from brain tumor images can assist in distinguishing between different tumor types, such as benign and malignant tumors. Ultimately, the project seeks to improve patient outcomes by providing a reliable and accessible tool for brain tumor classification.
   
 ## _Objective_ :
+The objective of the project on brain tumor classification using Convolutional Neural Networks (CNN) is threefold. Firstly, it aims to develop a robust and accurate classification system that can differentiate between different types of brain tumors based on medical imaging data. Secondly, the project aims to optimize the CNN architecture and training process to achieve high performance and efficiency in tumor classification. Lastly, the objective is to create a user-friendly interface that allows medical professionals to easily input brain tumor images, obtain classification results, and gain valuable insights to aid in diagnosis and treatment planning. The overall goal is to provide a reliable and accessible tool for improved brain tumor classification and patient care.
   
 ## _Abstract_ :
+The project on brain tumor classification using Convolutional Neural Networks (CNN) focuses on developing an automated system for accurately classifying brain tumors based on medical imaging data. By leveraging the power of CNNs, the project aims to enhance the accuracy and efficiency of brain tumor diagnosis. The CNN architecture enables hierarchical feature extraction, allowing the system to identify intricate patterns and characteristics specific to different tumor types. Through extensive training on a large dataset of labeled brain tumor images, the system can learn to differentiate between benign and malignant tumors. The project's objective is to provide medical professionals with a reliable tool that aids in accurate brain tumor classification, ultimately improving patient outcomes and treatment planning.
   
 
 ## _Methodology_ :
++ The necessary libraries are imported, including Keras, numpy, pandas, OpenCV, and matplotlib.
++ The dataset can be extracted. The extracted dataset contains training and testing images categorized into different tumor classes.
++ The code initializes empty lists to store training data and labels, The code initializes empty lists to store training data and labels.
++ Similar to the training set, testing set  can be prepared by iterating through each tumor class in the testing directory. 
++ Using the technique of thresholding and various morphological operations like erosion and dilation, the tumor area can be detected.
++ The CNN model architecture is modelled and compiled. The model is trained on training data and gets tested by testing data. Atlast, the model will accurately predict the type of brain tumor.
+
+
+
   
   
 ## _Project FlowChart :
@@ -157,5 +170,18 @@ print(str(answ[0][classification]*100) + '% Confidence This Is ' + names(classif
   ![2023-06-19 (1)](https://github.com/TamilVenthanRS/Brain_tumor_Classification/assets/75235477/71b9d806-21e2-4f15-b01b-fa3e677324ed)
 
 ## _Conclusion_ :
+In conclusion, the project on brain tumor classification using Convolutional Neural Networks (CNN) has successfully developed an automated system that accurately classifies brain tumors based on medical imaging data. By leveraging the power of CNNs, the system improves the accuracy and efficiency of brain tumor diagnosis. This advancement provides medical professionals with a reliable tool for enhanced brain tumor classification and improved patient care.
   
 ## _Results_ :
+The project on brain tumor classification using Convolutional Neural Networks (CNN) achieved promising results. The CNN-based system demonstrated high accuracy in distinguishing between different types of brain tumors based on medical imaging data. The system's ability to extract intricate features and patterns from the images contributed to its success. These results highlight the potential of CNNs in improving the accuracy and efficiency of brain tumor classification for enhanced patient care and treatment planning.
+
+## _References_ :
+
++ [Brain tumor detection based on Naïve Bayes Classification](https://ieeexplore.ieee.org/abstract/document/8802562)
+by hein tun zaw.
+
++ [Brain Tumor Types Classification using K-means Clustering and ANN Approach](https://ieeexplore.ieee.org/document/9331115) by Angona Biswas and Md. Saiful Islam.
+
++ [Brain Tumor Classification Using Support Vector Machines](https://ieeexplore.ieee.org/document/8318767) by Amruta Hebli.
+
++ [Brain Tumor Classification Using Support Vector  Machines  with Kernel Principal Component Analysis](https://www.researchgate.net/publication/337077979_Brain_Tumor_Classification_Using_Principal_Component_Analysis_and_Kernel_Support_Vector_Machine) by Richard Torres-Molina.
