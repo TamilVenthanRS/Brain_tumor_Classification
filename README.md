@@ -1,5 +1,5 @@
 
-# <p align="center">BRAIN TUMOR CLASSIFICATION
+# <p align="center">BRAIN TUMOR CLASSIFICATION USING CONVOLUTIONAL NEURAL NETWORKS
 
 ## *Introduction* :
 The project on brain tumor classification utilizing Convolutional Neural Networks (CNN) aims to develop a sophisticated system for accurate and automated classification of brain tumors. CNNs are deep learning models well-suited for image analysis tasks. By training a CNN on a large dataset of brain tumor images, the system can learn to identify complex patterns and features indicative of different tumor types. The CNN architecture allows for hierarchical feature extraction, enabling the system to capture intricate details within the images. The project's goal is to leverage the power of CNNs to create a reliable and efficient tool that can aid medical professionals in diagnosing brain tumors with improved accuracy and efficiency.
@@ -224,11 +224,28 @@ print(str(answ[0][classification]*100) + '% Confidence This Is ' + names(classif
 ```
   
 ## Output:
-  ![Untitled design](https://github.com/TamilVenthanRS/Brain_tumor_Classification/assets/75235477/8e650171-9c7e-4b65-99ab-f8c990a59841)
 
-  
-  
-  ![2023-06-19 (1)](https://github.com/TamilVenthanRS/Brain_tumor_Classification/assets/75235477/71b9d806-21e2-4f15-b01b-fa3e677324ed)
+### Model accuracy:
+![2023-06-21 (10)](https://github.com/TamilVenthanRS/Brain_tumor_Classification/assets/75235477/b5bc5113-bca8-4088-b2d3-645f0f2b3d40)
+
+### Model loss:
+![2023-06-21 (9)](https://github.com/TamilVenthanRS/Brain_tumor_Classification/assets/75235477/31fdbc57-bdac-4fd2-b6f2-890c7eb169c9)
+
+### Pituitary tumor:
+![2023-06-21 (11)](https://github.com/TamilVenthanRS/Brain_tumor_Classification/assets/75235477/2b3aee08-13bd-4c0f-a311-2ddb3038b52e)
+![2023-06-21 (13)](https://github.com/TamilVenthanRS/Brain_tumor_Classification/assets/75235477/95b966d6-aa66-45c4-8018-d53f219f66b7)
+
+### Meningioma tumor:
+![2023-06-21 (14)](https://github.com/TamilVenthanRS/Brain_tumor_Classification/assets/75235477/1c59af6b-953d-4679-b8d2-6f862673a1b4)
+![2023-06-21 (15)](https://github.com/TamilVenthanRS/Brain_tumor_Classification/assets/75235477/4ed7178c-9661-4668-ad6a-bf6f2201b4af)
+
+### Glioma tumor:
+![2023-06-21 (16)](https://github.com/TamilVenthanRS/Brain_tumor_Classification/assets/75235477/cbf65e9d-f7cc-41db-9928-ad149878d417)
+![2023-06-21 (17)](https://github.com/TamilVenthanRS/Brain_tumor_Classification/assets/75235477/3b55f1ac-0e19-49ba-b0bb-df070428ea0d)
+
+### No tumor:
+![2023-06-21 (18)](https://github.com/TamilVenthanRS/Brain_tumor_Classification/assets/75235477/24c7b201-99e8-45fe-a6ee-a3d3758dda9d)
+![2023-06-21 (20)](https://github.com/TamilVenthanRS/Brain_tumor_Classification/assets/75235477/29d099ed-ffd4-4149-a37c-a2f96c923923)
 
 ## _Conclusion_ :
 In conclusion, the project on brain tumor classification using Convolutional Neural Networks (CNN) has successfully developed an automated system that accurately classifies brain tumors based on medical imaging data. By leveraging the power of CNNs, the system improves the accuracy and efficiency of brain tumor diagnosis. This advancement provides medical professionals with a reliable tool for enhanced brain tumor classification and improved patient care.
