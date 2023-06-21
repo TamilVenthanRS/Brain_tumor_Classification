@@ -31,6 +31,67 @@ The project on brain tumor classification using Convolutional Neural Networks (C
  ![Collect the scan report image (3)](https://github.com/TamilVenthanRS/Brain_tumor_Classification/assets/75235477/5ef22676-3e9a-460d-b297-c03fbce3a4e9)
 
 ## Algorithm :
+
+Certainly! Here's an algorithmic representation of the given code:
+
+1. Import the required libraries and modules: `keras`, `os`, `PIL`, `numpy`, `sklearn`, `matplotlib.pyplot`, `pandas`, and `cv2`.
+
+2. Define and initialize the `OneHotEncoder` object `enc` with four categories: 0, 1, 2, and 3.
+
+3. Define a function `names()` that maps numbers to corresponding class names. The class names are assumed to be defined elsewhere in the code.
+
+4. Prepare the training data and labels:
+   - Set the image dimensions to (150, 150).
+   - Specify the training data path.
+   - Iterate through each directory in the training path.
+   - Inside each directory, iterate through the files and extract the image paths.
+   - Open each image, resize it to the specified dimensions, convert it to a numpy array, and add it to the `trainData` list.
+   - Transform the index value to a one-hot encoded label using the `enc` object and add it to the `trainLabel` list.
+   - Print the corresponding class name and directory name.
+   - Increment the index value.
+
+5. Convert the `trainData` and `trainLabel` lists to numpy arrays.
+
+6. Prepare the test data and labels:
+   - Set the image dimensions to (150, 150).
+   - Specify the testing data path.
+   - Iterate through each directory in the testing path.
+   - Inside each directory, iterate through the files and extract the image paths.
+   - Open each image, resize it to the specified dimensions, convert it to a numpy array, and add it to the `testData` list.
+   - Transform the index value to a one-hot encoded label using the `enc` object and add it to the `testLabel` list.
+   - Print the corresponding class name and directory name.
+   - Increment the index value.
+
+7. Convert the `testData` and `testLabel` lists to numpy arrays.
+
+8. Define the CNN model using `Sequential` from Keras:
+   - Add a convolutional layer with 32 filters, a kernel size of (3, 3), and an input shape of (150, 150, 3).
+   - Apply ReLU activation function.
+   - Add a max-pooling layer with a pool size of (2, 2).
+   - Add another convolutional layer with 32 filters and a kernel size of (3, 3).
+   - Apply ReLU activation function.
+   - Add another max-pooling layer with a pool size of (2, 2).
+   - Flatten the output of the previous layer.
+   - Add a fully connected layer with 32 units.
+   - Apply ReLU activation function.
+   - Apply dropout with a rate of 0.25.
+   - Add a fully connected layer with 4 units for the output classes.
+   - Apply softmax activation function.
+
+9. Compile the model using categorical cross-entropy loss and the Adam optimizer. Print the model summary.
+
+10. Train the model on the training data and labels:
+    - Use a batch size of 32 and train for 14 epochs.
+    - Provide the testing data and labels as the validation data.
+
+11. Perform Binary thresholding:
+    - Read an image using `cv2.imread`.
+    - Convert the image to RGB color space.
+    - Apply a binary threshold to the image.
+    - Perform erosion, dilation, and morphological opening on the binary image.
+    - Display the original image, binary image, and processed image using `matplotlib.pyplot`.
+
+
   
 ## _Program_ :
   
